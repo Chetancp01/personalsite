@@ -585,7 +585,7 @@
                     </div>
                     <div class="col-md-6 copyright py-2">
                         <p class="">
-                            © Copyright <script>document.write(/\d{4}/.exec(Date())[0])</script> - All Rights Reserved by <a href="#"
+                            © Copyright <span id="copyYear"></span> - All Rights Reserved by <a href="#"
                                 class="footer-copy">Chetan Parmar</a>
                         </p>
                     </div>
@@ -618,6 +618,10 @@
     <script src="js/aos.js"></script>
     <script src="js/skill.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        var cpDate = document.write(/\d{4}/.exec(Date())[0]);
+        document.getElementById('copyYear').value = cpDate;
+    </script>
     <script>
         AOS.init();
     </script>
